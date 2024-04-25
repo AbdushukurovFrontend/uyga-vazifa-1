@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/stayle.css" />
+  </head>
+  <body>
+    <h1>Random Dr Who Tabular Data</h1>
+    <h2>With CSS Grid</h2>
+    <div class="grid-table"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const gridtable = document.createElement("div");
+      gridtable.className = "grid-table";
+      const gridtablerow = document.createElement("div");
+      gridtablerow.className = "grid-table-row";
+      const grid2 = document.createElement("div");
+      grid2.className = "grid-table-cell";
+      grid2.innerHTML = "Title";
+      const grid3 = document.createElement("div");
+      grid3.className = "grid-table-cell";
+      grid3.innerHTML = "Episode Number";
+      const grid4 = document.createElement("div");
+      grid4.className = "grid-table-cell";
+      grid4.innerHTML = "Series";
+      const grid5 = document.createElement("div");
+      grid5.className = "grid-table-cell";
+      grid5.innerHTML = "Air Date";
+      gridtablerow.appendChild(grid2);
+      gridtablerow.appendChild(grid3);
+      gridtablerow.appendChild(grid4);
+      gridtablerow.appendChild(grid5);
+
+      const gridtablerow2 = document.createElement("div");
+      gridtablerow2.className = "grid-table-row";
+      const grid6 = document.createElement("div");
+      grid6.className = "grid-table-cell";
+      grid6.innerHTML = "The Name of the Doctor";
+      const grid7 = document.createElement("div");
+      grid7.className = "grid-table-cell";
+      grid7.innerHTML = "239";
+      const grid8 = document.createElement("div");
+      grid8.className = "grid-table-cell";
+      grid8.innerHTML = "7";
+      const grid9 = document.createElement("div");
+      grid9.className = "grid-table-cell";
+      grid9.innerHTML = "05/18/2013";
+      gridtablerow2.appendChild(grid6);
+      gridtablerow2.appendChild(grid7);
+      gridtablerow2.appendChild(grid8);
+      gridtablerow2.appendChild(grid9);
+      const gridtablerow3 = document.createElement("div");
+      gridtablerow3.className = "grid-table-row";
+      const grid10 = document.createElement("div");
+      grid10.className = "grid-table-cell";
+      grid10.innerHTML = "The Day of the Doctor";
+      const grid11 = document.createElement("div");
+      grid11.className = "grid-table-cell";
+      grid11.innerHTML = "1";
+      const grid12 = document.createElement("div");
+      grid12.className = "grid-table-cell";
+      grid12.innerHTML = "Special";
+      const grid13 = document.createElement("div");
+      grid13.className = "grid-table-cell";
+      grid13.innerHTML = "11/23/2013";
+      gridtablerow3.appendChild(grid10);
+      gridtablerow3.appendChild(grid11);
+      gridtablerow3.appendChild(grid12);
+      gridtablerow3.appendChild(grid13);
+      const gridtablerow4 = document.createElement("div");
+      gridtablerow4.className = "grid-table-row";
+      const grid14 = document.createElement("div");
+      grid14.className = "grid-table-cell";
+      grid14.innerHTML = "The Time of the Doctor";
+      const grid15 = document.createElement("div");
+      grid15.className = "grid-table-cell";
+      grid15.innerHTML = "2";
+      const grid16 = document.createElement("div");
+      grid16.className = "grid-table-cell";
+      grid16.innerHTML = "Special";
+      const grid17 = document.createElement("div");
+      grid17.className = "grid-table-cell";
+      grid17.innerHTML = "11/25/2013";
+      gridtablerow4.appendChild(grid14);
+      gridtablerow4.appendChild(grid15);
+      gridtablerow4.appendChild(grid16);
+      gridtablerow4.appendChild(grid17);
+      gridtable.appendChild(gridtablerow);
+      gridtable.appendChild(gridtablerow2);
+      gridtable.appendChild(gridtablerow3);
+      gridtable.appendChild(gridtablerow4);
+      document.body.appendChild(gridtable);
+    </script>
+  </body>
+</html>
